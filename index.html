@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Scroll Slider</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        .slider {
+            display: flex;
+            flex-direction: column;
+            height: 300vh;
+            /* 3 screens ka height taake smooth transition ho */
+        }
+
+        .slide {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: bold;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide:nth-child(1) {
+            background: lightblue;
+        }
+
+        .slide:nth-child(2) {
+            background: lightgreen;
+        }
+
+        .slide:nth-child(3) {
+            background: lightcoral;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
