@@ -10,11 +10,14 @@ let Cities = ['karachi'  , 'lahore' , 'peshawer' , 'Islamabad' , 'quata'];
 
 for (i = 0; i < Cities.length; i++){
     if(Cities[i].toLowerCase() === check.toLowerCase()){
-        console.log(`your are good ${i}`);
-        // break;
+        console.log(`your are good`);
+        break;
     }
-    else if(Cities[i].toLowerCase() !== check.toLowerCase()){
-        console.log(`your are not a good ${i}`);
-        // break;
-    }
+    // else if(Cities[i].toLowerCase() !== check.toLowerCase()){
+    //     console.log(`your are not a good ${i}`);
+    //     break;
+    // }
+}
+     if(Cities[i] !== check){
+    console.log(`your are not a good`);
 }
