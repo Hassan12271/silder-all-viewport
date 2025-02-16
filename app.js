@@ -9,12 +9,12 @@ let check = prompt("Please Enter your City");
 let Cities = ['karachi'  , 'lahore' , 'peshawer' , 'Islamabad' , 'quata'];
 
 for (i = 0; i < Cities.length; i++){
-    if(Cities[i] === check){
-        console.log('your are good');
-        break;
+    if(Cities[i].toLowerCase() === check.toLowerCase()){
+        console.log(`your are good ${i}`);
+        // break;
     }
-    else if(Cities[i] !== check){
-        console.log(`your are not a good`);
+    else if(Cities[i].toLowerCase() !== check.toLowerCase()){
+        console.log(`your are not a good ${i}`);
+        // break;
     }
-    break;
 }
